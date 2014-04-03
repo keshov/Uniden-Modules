@@ -1,4 +1,4 @@
 Uniden-Modules
 ==============
 
-Modules to work with Uniden Radio scanners
+Perl modules to work with Uniden Radio scanners
