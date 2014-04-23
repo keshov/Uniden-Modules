@@ -1,14 +1,14 @@
 =head1 NAME
 
-Uniden::BCL75XLT - module to program Uniden BCL75XLT radio scanner over
+Uniden::BC75XLT - module to program Uniden BC75XLT radio scanner over
 USB connection
 
 =head1 SYNOPSIS
 
- use Uniden::BCL75XLT;
+ use Uniden::BC75XLT;
  use Data::Dumper;
 
- my $radio = Uniden::BCL75XLT->new('/dev/ttyUSB0') || die "Cannot open radio: $!\n";
+ my $radio = Uniden::BC75XLT->new('/dev/ttyUSB0') || die "Cannot open radio: $!\n";
    
  #  get channels info in bank N1
  my $channelsInfo = $radio->getBankChannelsInfo(1);
@@ -26,7 +26,7 @@ UNIDEN BC75XLT Operation Specification
 
 =head2 PACKAGE-E<gt>new(DEVICE_STR, OPTS_HASH)
 
-Creates new Uniden::BLC75XLT object. Where C<DEVICE_STR> is port name and 
+Creates new Uniden::BC75XLT object. Where C<DEVICE_STR> is port name and 
 C<OPTS_HASH> is a hash with following keys:
 
 =over 3
